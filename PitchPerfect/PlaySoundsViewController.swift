@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class PlaySoundsViewController: UIViewController {
+class PlaySoundsViewController: UIViewController, AVAudioPlayerDelegate {
   
   var audioPlayer: AVAudioPlayer!
   var receivedAudio: RecordedAudio!
@@ -25,6 +25,8 @@ class PlaySoundsViewController: UIViewController {
   @IBAction func playSlow(sender: UIButton) {
     stopButton.enabled = true
     audioPlayer.stop()
+    audioEngine.stop()
+    audioEngine.reset()
     audioPlayer.rate = 0.5
     audioPlayer.play()
   }
@@ -32,6 +34,8 @@ class PlaySoundsViewController: UIViewController {
   @IBAction func playFast(sender: UIButton) {
     stopButton.enabled = true
     audioPlayer.stop()
+    audioEngine.stop()
+    audioEngine.reset()
     audioPlayer.rate = 1.5
     audioPlayer.play()
   }
@@ -39,6 +43,7 @@ class PlaySoundsViewController: UIViewController {
   
   @IBAction func stopPlay(sender: UIButton) {
     audioPlayer.stop()
+    audioEngine.stop()
     stopButton.enabled = false
   }
   
@@ -52,23 +57,14 @@ class PlaySoundsViewController: UIViewController {
 
     override func viewDidLoad() {
       super.viewDidLoad()
-//      if var path =  NSBundle.mainBundle().pathForResource("movie_quote", ofType: "mp3") {
-//         var pathURL = NSURL(fileURLWithPath: path)
-//      } else {
-//        println("The filepath is missing")
-//      }
-      
       audioPlayer = AVAudioPlayer(contentsOfURL: receivedAudio.filePathUrl, error: nil)
       audioPlayer.enableRate = true
-      
       audioEngine = AVAudioEngine()
       audioFile = AVAudioFile(forReading: receivedAudio.filePathUrl, error: nil)
-
     }
 
     override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+      super.didReceiveMemoryWarning()
     }
 
   
@@ -92,8 +88,6 @@ class PlaySoundsViewController: UIViewController {
     
     audioPlayerNode.play()
     stopButton.enabled = true
-    
   }
-  
 
 }

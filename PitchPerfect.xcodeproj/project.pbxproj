@@ -16,6 +16,7 @@
 		EE5CC3C91B5A7A3800AC0F08 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5CC3C81B5A7A3800AC0F08 /* PlaySoundsViewController.swift */; };
 		EE5CC3CB1B5A7F9C00AC0F08 /* movie_quote.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EE5CC3CA1B5A7F9C00AC0F08 /* movie_quote.mp3 */; };
 		EE5CC3CD1B5ACB1200AC0F08 /* RecordedAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5CC3CC1B5ACB1200AC0F08 /* RecordedAudio.swift */; };
+		EE5CC3CF1B5BD08600AC0F08 /* CustomActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5CC3CE1B5BD08600AC0F08 /* CustomActivityIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		EE5CC3C81B5A7A3800AC0F08 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
 		EE5CC3CA1B5A7F9C00AC0F08 /* movie_quote.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = movie_quote.mp3; sourceTree = "<group>"; };
 		EE5CC3CC1B5ACB1200AC0F08 /* RecordedAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordedAudio.swift; sourceTree = "<group>"; };
+		EE5CC3CE1B5BD08600AC0F08 /* CustomActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomActivityIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				EE5CC3CC1B5ACB1200AC0F08 /* RecordedAudio.swift */,
 				EE5CC3AC1B5A595E00AC0F08 /* Main.storyboard */,
 				EE5CC3C81B5A7A3800AC0F08 /* PlaySoundsViewController.swift */,
+				EE5CC3CE1B5BD08600AC0F08 /* CustomActivityIndicator.swift */,
 				EE5CC3AF1B5A595E00AC0F08 /* Images.xcassets */,
 				EE5CC3B11B5A595E00AC0F08 /* LaunchScreen.xib */,
 				EE5CC3A61B5A595E00AC0F08 /* Supporting Files */,
@@ -225,6 +228,7 @@
 				EE5CC3CD1B5ACB1200AC0F08 /* RecordedAudio.swift in Sources */,
 				EE5CC3AB1B5A595E00AC0F08 /* RecordSoundsViewController.swift in Sources */,
 				EE5CC3C91B5A7A3800AC0F08 /* PlaySoundsViewController.swift in Sources */,
+				EE5CC3CF1B5BD08600AC0F08 /* CustomActivityIndicator.swift in Sources */,
 				EE5CC3A91B5A595E00AC0F08 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -421,6 +425,7 @@
 				EE5CC3C41B5A595E00AC0F08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EE5CC3C51B5A595E00AC0F08 /* Build configuration list for PBXNativeTarget "PitchPerfectTests" */ = {
 			isa = XCConfigurationList;
@@ -429,6 +434,7 @@
 				EE5CC3C71B5A595E00AC0F08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
